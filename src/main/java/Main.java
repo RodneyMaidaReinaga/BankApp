@@ -14,8 +14,7 @@ public class Main {
         String name = "Jerry";
         String account = "BO10006789";
         // Welcome to the BankApp
-        print("Welcome " + name);
-        print("Your current account is " + account);
+        wellcome(name, account);
         // Main Menu
         showMenu();
         // Press a key to select an option
@@ -56,6 +55,11 @@ public class Main {
                 print("(A) Show All options");
             } while (option != 'E');
         }
+    }
+
+    private void wellcome(String name, String account) {
+        print("Welcome " + name);
+        print("Your current account is " + account);
     }
 
 }

@@ -22,6 +22,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1ZZlZbinNhcRijQ8kQUfqe9udma" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -92,5 +93,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="178" width="1092" height="721" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585054967633" />
+    <state width="1340" height="250" key="GridCell.Tab.0.bottom" timestamp="1585246900724">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="250" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585246900724" />
+    <state width="1340" height="250" key="GridCell.Tab.0.center" timestamp="1585246900724">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="250" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585246900724" />
+    <state width="1340" height="250" key="GridCell.Tab.0.left" timestamp="1585246900724">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="250" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585246900724" />
+    <state width="1340" height="250" key="GridCell.Tab.0.right" timestamp="1585246900724">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="250" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585246900724" />
+    <state x="616" y="242" key="run.anything.popup" timestamp="1585242340725">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="242" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585242340725" />
   </component>
 </project>

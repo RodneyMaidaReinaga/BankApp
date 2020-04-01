@@ -9,20 +9,21 @@ public class Main {
 
     }
 
+    public void print(String message) {
+        System.out.println(message);
+    }
+
     private void run() {
         // User details
         String name = "Jerry";
         String account = "BO10006789";
+        BankAccount bankAccount = new BankAccount(name, account);
         // Welcome to the BankApp
         wellcome(name, account);
         // Main Menu
         showMenu();
         // Press a key to select an option
-        readOption();
-    }
-
-    public void print(String message) {
-        System.out.println(message);
+        readOption(bankAccount);
     }
 
     private void showMenu() {
@@ -37,22 +38,35 @@ public class Main {
         print("********************");
     }
 
-    private void readOption() {
+    private void readOption(BankAccount bankAccount) {
         try (Scanner scanner = new Scanner(System.in)) {
+            boolean isRunning = true;
             char option;
             do {
                 System.out.print("Select an option: ");
                 option = (char) scanner.nextLine().trim().toUpperCase().charAt(0);
                 switch (option) {
+                    case 'A':
+                        showMenu();
+                        break;
+                    case 'B':
+                        print("My balance: " + bankAccount.getBalance());
+                        break;
                     case 'E':
                         print("Exit...");
+                        isRunning = false;
+                        break;
+                    case 'W':
+                        withdraw(bankAccount);
                         break;
                     default:
                         print(option + " is an invalid option");
                         break;
                 }
                 print(System.lineSeparator());
-                print("(A) Show All options");
+                if (isRunning) {
+                    print("(A) Show All options");
+                }
             } while (option != 'E');
         }
     }
@@ -60,6 +74,21 @@ public class Main {
     private void wellcome(String name, String account) {
         print("Welcome " + name);
         print("Your current account is " + account);
+    }
+
+//    public char readFirstChar() {
+//        return (char) scanner.nextLine().trim().toUpperCase().charAt(0);
+//    }
+
+    private void withdraw(BankAccount bankAccount) {
+        double retiro;
+        Scanner scanner = new Scanner(System.in);
+
+        print("Cuanto desea retirar: ");
+        retiro = (double) scanner.nextDouble();
+        print("Usted desea sacar: " + retiro);
+
+        bankAccount.withdraw(retiro);
     }
 
 }

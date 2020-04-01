@@ -83,12 +83,17 @@ public class Main {
     private void withdraw(BankAccount bankAccount) {
         double retiro;
         Scanner scanner = new Scanner(System.in);
-
         print("Cuanto desea retirar: ");
         retiro = (double) scanner.nextDouble();
-        print("Usted desea sacar: " + retiro);
 
-        bankAccount.withdraw(retiro);
+        if (retiro < bankAccount.getBalance()) {
+
+            print("Usted desea sacar: " + retiro);
+
+            bankAccount.withdraw(retiro);
+        } else {
+            print("Su cuenta no tienen suficientes fondos para realizar este retiro");
+        }
     }
 
 }
